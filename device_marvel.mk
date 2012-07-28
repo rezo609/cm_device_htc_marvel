@@ -28,7 +28,7 @@ DEVICE_PACKAGE_OVERLAYS := device/htc/marvel/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
