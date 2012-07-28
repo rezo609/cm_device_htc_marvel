@@ -29,11 +29,3 @@ BUILD_ID := BENJAMINGWYNN-AOKP-$(NOW)
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_marvel BUILD_ID=$(BUILD_ID) BUILD_DISPLAY_ID=$(BUILD_ID) BUILD_FINGERPRINT=cm/htc_marvel/marvel:4.1/cm$(BUILD_ID)/0.1:user/release-keys PRIVATE_BUILD_DESC="0.1 benjamingwynn release-keys"
-
-# Goo.im OTA update support
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.goo.developerid=benjamingwynn \
-	ro.goo.board=$(TARGET_PRODUCT) \
-	ro.goo.rom=aokp_$(TARGET_PRODUCT) \
-	ro.goo.version=$(shell date +%s)
