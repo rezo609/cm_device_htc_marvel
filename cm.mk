@@ -1,4 +1,7 @@
-PRODUCT_RELEASE_NAME := CRYPTOMILK
+PRODUCT_RELEASE_NAME := CYANOGENMOD
+
+# Set date
+NOW=$(shell date +"%d-%m-%Y")
 
 # Boot animation
 TARGET_BOOTANIMATION_NAME := vertical-320x480
@@ -12,19 +15,25 @@ $(call inherit-product, device/htc/marvel/device_marvel.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := marvel
-PRODUCT_NAME := cm_marvel
+PRODUCT_NAME := aokp_marvel
 PRODUCT_BRAND := htc_europe
-PRODUCT_MODEL := Wildfire S A510e
+PRODUCT_MODEL := Wildfire S
 PRODUCT_MANUFACTURER := HTC
-
-PRODUCT_VERSION_DEVICE_RELEASE := ALPHA7
-PRODUCT_VERSION_DEVICE_SPECIFIC := -CRYPTOMILK-$(PRODUCT_VERSION_DEVICE_RELEASE)
+PRODUCT_VERSION_DEVICE_SPECIFIC := -CYANOGENMOD-10-NIGHTLY-$(NOW)
 
 # CM_RELEASE := true
-CM_BUILDTYPE := UNOFFICIAL
-CM_EXTRAVERSION := CRYPTOMILK-$(PRODUCT_VERSION_DEVICE_RELEASE)
+CM_BUILDTYPE := NIGHTLY
+CM_EXTRAVERSION := CM-10-NIGHTLY-$(NOW)
 
-BUILD_ID := ASN00$(shell date -u +%Y%m%d)
+BUILD_ID := BENJAMINGWYNN-AOKP-$(NOW)
 
 # Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_marvel BUILD_ID=$(BUILD_ID) BUILD_DISPLAY_ID=$(BUILD_ID) BUILD_FINGERPRINT=cyanogenmod/htc_marvel/marvel:4.0.4/ASN$(BUILD_ID)/0.1:user/release-keys PRIVATE_BUILD_DESC="0.1 CRYPTOMILK release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_marvel BUILD_ID=$(BUILD_ID) BUILD_DISPLAY_ID=$(BUILD_ID) BUILD_FINGERPRINT=cm/htc_marvel/marvel:4.1/cm$(BUILD_ID)/0.1:user/release-keys PRIVATE_BUILD_DESC="0.1 benjamingwynn release-keys"
+
+# Goo.im OTA update support
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=benjamingwynn \
+	ro.goo.board=$(TARGET_PRODUCT) \
+	ro.goo.rom=aokp_$(TARGET_PRODUCT) \
+	ro.goo.version=$(shell date +%s)
