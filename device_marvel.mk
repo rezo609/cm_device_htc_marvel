@@ -16,6 +16,8 @@
 
 ## (1) First, the most specific values, i.e. the aspects that are specific to GSM
 
+$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
+
 $(call inherit-product, build/target/product/full_base.mk)
 $(call inherit-product, build/target/product/languages_full.mk)
 
