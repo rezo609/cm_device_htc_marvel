@@ -18,10 +18,10 @@
 */
 -->
 
-<!-- <resource>
+<!-- <resources>
     <dimen name="key_preview_backing_height">160dip</dimen>
-</resource> -->
+</resources> -->
 
-<resource>
+<resources>
     <integer name="max_more_suggestions_row">4</integer>
-</resource>
+</resources>
