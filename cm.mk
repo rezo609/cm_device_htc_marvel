@@ -28,4 +28,4 @@ CM_EXTRAVERSION := CM-10-NIGHTLY-$(NOW)
 BUILD_ID := BENJAMINGWYNN-CM-$(NOW)
 
 # Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_marvel BUILD_ID=$(BUILD_ID) BUILD_DISPLAY_ID=$(BUILD_ID) BUILD_FINGERPRINT=cm/htc_marvel/marvel:4.1.1/cm$(BUILD_ID)/0.1:user/release-keys PRIVATE_BUILD_DESC="0.1 benjamingwynn release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_marvel BUILD_ID=$(BUILD_ID) BUILD_DISPLAY_ID=$(BUILD_ID) BUILD_FINGERPRINT=cm/htc_marvel/marvel:4.1.1/$(BUILD_ID)/0.1:user/release-keys PRIVATE_BUILD_DESC="0.1 benjamingwynn release-keys"
