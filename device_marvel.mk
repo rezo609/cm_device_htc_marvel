@@ -88,6 +88,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     lights.marvel \
     gps.marvel \
-    audio.a2dp.default \
     audio.primary.marvel \
     audio_policy.marvel
