@@ -86,6 +86,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Add device specific modules
 PRODUCT_PACKAGES += \
+    libaudio \
     lights.marvel \
     gps.marvel \
     audio.primary.marvel \
