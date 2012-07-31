@@ -89,5 +89,6 @@ PRODUCT_PACKAGES += \
     libaudio \
     lights.marvel \
     gps.marvel \
+    audio.a2dp.default \
     audio.primary.marvel \
     audio_policy.marvel

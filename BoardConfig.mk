@@ -26,10 +26,11 @@
 
 TARGET_BOOTLOADER_BOARD_NAME := marvel
 
-### Other jellybean
+### Other
 BOARD_NEEDS_MEMORYHEAPPMEM := true
 
 ### Audio
+TARGET_PROVIDES_LIBAUDIO := true
 COMMON_GLOBAL_CFLAGS += -DICS_AUDIO_BLOB
 
 ### Qcom GPS
