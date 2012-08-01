@@ -20,8 +20,7 @@
 # definition file).
 #
 
-# inherit from common msm7x27
--include device/htc/msm7x27-common/BoardConfigCommon.mk
+# inherit from common
 -include device/htc/marvel-common/BoardConfigCommon.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := marvel
