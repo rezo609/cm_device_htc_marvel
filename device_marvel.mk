@@ -23,7 +23,6 @@ $(call inherit-product, build/target/product/languages_full.mk)
 
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
-$(call inherit-product, device/htc/msm7x27-common/msm7x27.mk)
 $(call inherit-product, device/htc/marvel-common/marvel.mk)
 
 DEVICE_PACKAGE_OVERLAYS := device/htc/marvel/overlay
