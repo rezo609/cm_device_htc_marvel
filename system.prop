@@ -160,9 +160,3 @@ ro.product.wifi = 802.11 b/g/n
 # update the acoustic table for Buzz NEL lab testing
 ro.ril.update.acoustic.table = 1
 
-#- Goo Manager update support
-ro.goo.developerid=benjamingwynn
-ro.goo.board=$(TARGET_PRODUCT)
-ro.goo.rom=cm10_$(TARGET_PRODUCT)
-ro.goo.version=$(shell date +%s)
-
